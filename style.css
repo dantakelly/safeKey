@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #EEF5FF;
+}
+
+#the-contaner-that-holds-all{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+/* Introduction Container */
+.introduction-container{
+    background-color: #b4d5ff69;
+    width: 800px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 3px #86b7f68b;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.moreAboutInfo{ 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.moreAboutInfo button{
+    width: fit-content;
+    padding: 15px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #86B6F6;
+    
+    transition: all 0.5s ease;
+}
+
+.moreAboutInfo button:hover{ 
+    background-color: #86b7f6a2;
+}
+/* Introduction Container Closed */
+
+
+/* Password Generator Container */
+.dataShows-box{
+    border: solid 1px black;
+    width: 620px;
+    height: fit-content;
+    padding: 20px;
+    border: none; 
+    border-radius: 10px;
+    background-color: #86b7f653;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-shows-here{
+    font-weight: 500; 
+}
+
+.smallIcons-CR{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.smallIcons-CR img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.smallIcons-CR img:hover{
+    background-color: #86B6F6;
+    border-radius: 100px;
+
+    align-items: center;
+    padding: 3px;
+}
+
+
+/* Password customizer elements */
+#Main-Container{
+    background-color: #86b7f634;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.passswordGeneratorElements{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 40px;
+}
+
+#customizeRandomPassword{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    /* border: solid 2px #86B6F6; */
+    box-shadow: 0px 0px 10px 1px #86b7f68b;
+    border-radius:10px;
+}
+
+.button-elements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    gap: 10px;
+}
+
+.button-elements button{
+    padding: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: #b4d5ff69;
+    cursor: pointer;
+}
+
+.G60-button, .G50-button{
+    cursor: not-allowed !important;
+}
+
+.rightSideofcustomizer{
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reloadIcon:active{ 
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* pce closed */
+/* Password Generator closed */
+
+
+
+/* Media Query Section */
+
+/* Media for mobile phones */
+@media screen and (max-width:300px) {
+
+    #the-contaner-that-holds-all{
+        padding: 18px;
+        gap: 50px;
+    }
+
+    .introduction-container{
+        width: 100%;
+    }
+
+    .introduction-container h1{ 
+        font-size: 20px;
+    }
+
+    .introduction-container p{ 
+        font-size: 15px;
+    }
+
+    .moreAboutInfo button{
+        padding: 13px;
+    }
+
+    /* The random password container */
+    #Main-Container{
+        width: 100%;
+    }
+
+    .data-shows-here{
+       font-size: 15px;
+    }
+
+    .dataShows-box{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 13px;
+
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+    .rightSideofcustomizer{
+        display: none;
+    }
+
+    #customizeRandomPassword{
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* mobile phones query closed */
+
+
+/* Media for screens that are at 301px to 600px */
+@media all and (min-width: 301px) and (max-width: 600px) {
+    #the-contaner-that-holds-all{
+        padding: 18px;
+        gap: 50px;
+    }
+
+    .introduction-container{
+        width: 100%;
+    }
+
+    .introduction-container h1{ 
+        font-size: 20px;
+    }
+
+    .introduction-container p{ 
+        font-size: 15px;
+    }
+
+    .moreAboutInfo button{
+        padding: 13px;
+    }
+
+    /* The random password container */
+    #Main-Container{
+        width: 100%;
+    }
+
+    .data-shows-here{
+       font-size: 15px;
+    }
+
+    .dataShows-box{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 13px;
+
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+    .rightSideofcustomizer{
+        display: none;
+    }
+
+    #customizeRandomPassword{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Media for screens that are at 601px to 1000px */
+@media all and (min-width: 601px) and (max-width: 815px) {
+    #the-contaner-that-holds-all{
+        padding: 18px;
+        gap: 50px;
+    }
+
+    .introduction-container{
+        width: 100%;
+    }
+
+    .introduction-container h1{ 
+        font-size: 20px;
+    }
+
+    .introduction-container p{ 
+        font-size: 15px;
+    }
+
+    .moreAboutInfo button{
+        padding: 13px;
+    }
+
+    /* The random password container */
+    #Main-Container{
+        width: 100%;
+    }
+
+    .data-shows-here{
+       font-size: 15px;
+    }
+
+    .dataShows-box{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 13px;
+
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+    }
+
+    .rightSideofcustomizer{
+        /* display: none; */
+    }
+
+    #customizeRandomPassword{
+        /* align-items: center;
+        justify-content: center; */
+    }
+}
+
+/* media query Section Closed */
